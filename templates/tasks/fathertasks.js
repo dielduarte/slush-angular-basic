@@ -3,12 +3,12 @@ var gulp   = require('gulp');
 
 // Taks default gulp! 
 gulp.task('default', function(){
-	gulp.start('socialinfo:dev');
+	gulp.start('dev');
 });
 
 
-//task for build hotsite
-gulp.task('socialinfo:build', [
+//task for build 
+gulp.task('build', [
           'copyindex',
           'copyimage', 
           'copyfont',
@@ -18,13 +18,13 @@ gulp.task('socialinfo:build', [
 
 
 
-//task for developer hotsite
-gulp.task('socialinfo:dev', [
+//task for developer
+gulp.task('dev', [
           'socialinfo:build',
           'watch']);
 
 
 //task for prepare deploy
-gulp.task('socialinfo:production',[
-          'socialinfo:build',
+gulp.task('production',[
+          'build',
           'imagemin']);

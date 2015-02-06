@@ -9,7 +9,7 @@ var gulp       = require('gulp'),
 gulp.task('js', function() {
   return gulp.src([
   	'./dev/app/modules/**/*.js',
-    './dev/app/routes/**/*.js',
+    './dev/app/config/**/*.js',
     './dev/app/directives/**/*.js',
     './dev/app/services/**/*.js',
     './dev/app/factorys/**/*.js',
