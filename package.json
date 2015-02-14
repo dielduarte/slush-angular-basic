@@ -1,17 +1,15 @@
-{
-  "name": "slush-angular-basic",
-  "version": "0.0.1",
+{ "name": "slush-angular-basic",
+  "version": "0.0.2",
   "description": "my personal template for develop angular webapp",
   "main": "slushfile.js",
   "keywords": [
     "slushgenerator",
     "angular",
-    "slush-angular-basic"
-    "basic",
+    "slush-angular-basic",
     "bower"
   ],
   "dependencies": {
-    "gulp": "^3.5.6",
+    "gulp":    "^3.5.6",
     "gulp-template": "~0.1.1",
     "gulp-install": "~0.1.1",
     "gulp-conflict": "~0.1.1",
@@ -21,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/magdielduarte/slush-angular-basic"
+    "url": "https://github.com/dielduarte/slush-angular-basic"
   },
   "author": "Diel Duarte",
   "license": "MIT"

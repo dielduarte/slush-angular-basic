@@ -20,7 +20,7 @@ gulp.task('build', [
 
 //task for developer
 gulp.task('dev', [
-          'socialinfo:build',
+          'build',
           'watch']);
 
 

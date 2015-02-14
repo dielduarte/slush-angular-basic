@@ -25,7 +25,7 @@
 
 			$routeProvider.
 				when('/', {
-					templateUrl: 'index.html'
+					templateUrl: 'views/index.html'
 				}).
 				otherwise({
 	        redirectTo: '/'
