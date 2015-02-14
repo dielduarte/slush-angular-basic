@@ -2,7 +2,6 @@
 	*
 	* AppRoutes.js
 	*
-	* @author Diel Duarte
 	*
 	*	This file contens all config for app
 	* routes, httpProviders and others..
@@ -26,7 +25,7 @@
 
 			$routeProvider.
 				when('/', {
-					templateUrl: 'views/dashboard/master.html'
+					templateUrl: 'index.html'
 				}).
 				otherwise({
 	        redirectTo: '/'

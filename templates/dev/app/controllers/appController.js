@@ -1,8 +1,6 @@
 /**
 	*
 	* AppController
-	*
-	* @author Diel Duarte
 	* 
 	* @dependency - $http
 	*
@@ -21,7 +19,6 @@
 			*
 			* appController
 			*
-			* @author Diel Duarte
 			* 
 			* @dependency - $http, 
 			*								$location 
