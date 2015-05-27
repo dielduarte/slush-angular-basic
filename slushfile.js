@@ -1,8 +1,8 @@
 /*
  * slush-mean
- * https://github.com/seu-nome/slush-mean
+ * https://github.com/dielduarte/slush-angular-basic
  *
- * Copyright (c) 2014, Seu Nome
+ * Copyright (c) 2014, Diel Duarte
  * Licensed under the MIT license.
  */
 

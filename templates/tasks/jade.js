@@ -9,7 +9,7 @@ jade       = require('gulp-jade');
 gulp.task('jade', function() {
 	var opts = {comments:true};
 
-  gulp.src('./dev/app/views/**/*.jade')
+  gulp.src('./app/views/**/*.jade')
     .pipe(jade({pretty: true}))  
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('./public/views/'))

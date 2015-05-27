@@ -10,7 +10,7 @@ cssGlobbing = require('gulp-css-globbing');
 // Task for concat and minfier  and convert sass to css files 
 gulp.task('css', function() {
 
-  gulp.src('./dev/app/assets/scss/main.scss')
+  gulp.src('./app/assets/scss/main.scss')
   	.pipe(cssGlobbing({ extensions: ['.css', '.scss'] }))
     .pipe(sass())
     .pipe(concat('main.css'))

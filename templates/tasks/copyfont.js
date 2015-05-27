@@ -4,7 +4,7 @@ var gulp   = require('gulp');
 
 //task for copy fonts dev to build
 gulp.task('copyfont',['copyfontaweome'], function(){
-  return gulp.src('./dev/app/assets/fonts/*.*')
+  return gulp.src('./app/assets/fonts/*.*')
     .pipe(gulp.dest('./public/assets/fonts'));
 });
 

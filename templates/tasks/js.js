@@ -8,12 +8,12 @@ var gulp       = require('gulp'),
 // Task for concat and minifier the *.js files
 gulp.task('js', function() {
   return gulp.src([
-  	'./dev/app/modules/**/*.js',
-    './dev/app/config/**/*.js',
-    './dev/app/directives/**/*.js',
-    './dev/app/services/**/*.js',
-    './dev/app/factorys/**/*.js',
-    './dev/app/controllers/**/*.js'])
+  	'./app/modules/**/*.js',
+    './app/config/**/*.js',
+    './app/directives/**/*.js',
+    './app/services/**/*.js',
+    './app/factorys/**/*.js',
+    './app/controllers/**/*.js'])
     .pipe(concat('main.js'))
       .pipe(ngAnnotate())
       .pipe(uglify())

@@ -6,7 +6,7 @@ var gulp       = require('gulp'),
 gulp.task('copyindex', function() {
   var opts = {comments:true};
 
-  gulp.src('./dev/app/index.jade')
+  gulp.src('./app/index.jade')
     .pipe(jade({pretty: true}))  
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('./public/'))
