@@ -14,7 +14,7 @@ gulp.task('css', function() {
   	.pipe(cssGlobbing({ extensions: ['.css', '.scss'] }))
     .pipe(sass())
     .pipe(concat('main.css'))
-    .pipe(minifyCSS(opts))
+    .pipe(minifyCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./public/assets/css'));
 });
