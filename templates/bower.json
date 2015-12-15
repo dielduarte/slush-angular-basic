@@ -1,13 +1,12 @@
 {
-  "name": "webapp.socialinfo",
-  "version": "0.0.1",
+  "name": "<%= appNameSlug %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
+  "homepage": "<%= appHomepage %>",
   "authors": [
-    "Diel Duarte",
-    "Marcio Mansur"
+    "<%= appAuthorSlug %><%= appEmail %>"
   ],
-  "description": "webapp social info feito com angularjs",
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,11 +14,11 @@
     "test",
     "tests"
   ],
+  "private": true,
   "dependencies": {
-    "angularjs": "~1.3.8",
-    "angular-loader": "~1.3.8",
-    "angular-route": "~1.3.8",
-    "bootstrap-sass": "~3.3.1",
-    "fontawesome": "~4.3.0"
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-sanitize": "~1.4.8",
+    "angular-toastr": "~1.6.0"
   }
 }

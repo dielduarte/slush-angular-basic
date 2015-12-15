@@ -1,12 +1,8 @@
+var gulp = require('gulp');
+var imagemin = require('gulp-imagemin');
 
-var gulp   = require('gulp'),
-imagemin   = require('gulp-imagemin');
-
-
-
-// Task for minifier the images
-gulp.task('imagemin',function () {
-  return gulp.src('./app/assets/img/*.png')
+gulp.task('imagemin', function () {
+  return gulp.src('./app/assets/img/*.*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./public/assets/img'));
+    .pipe(gulp.dest('./build/assets/img'));
 });

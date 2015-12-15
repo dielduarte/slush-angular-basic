@@ -1,15 +1,14 @@
 doctype html
-html(lang="en" ng-app="app")
+html(ng-app='app')
   head
+    meta(charset='utf-8')
     title slush angular basic
-    link(rel="stylesheet", href="assets/css/main.min.css")
-
-
-  body(ng-controller="appController as vm")
-    ng-view
-        |Ready for develop!
-
-    script(src="bower_components/angularjs/angular.min.js")
-    script(src="bower_components/angular-loader/angular-loader.min.js")
-    script(src="bower_components/angular-route/angular-route.min.js")
-    script(src="assets/js/main.min.js")    
+    meta(name='viewport', content='width=device-width')
+    // Styles
+    link(rel='stylesheet', type='text/css', href='assets/css/vendors.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/main.min.css')
+  body
+    ng-view  
+    // JS
+    script(src='scripts/vendors.min.js')
+    script(src='scripts/app.min.js')

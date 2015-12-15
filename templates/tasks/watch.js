@@ -1,8 +1,7 @@
-var gulp   = require('gulp');
+var gulp = require('gulp');
 
-gulp.task('watch',function(){
-    gulp.watch('app/**/*.js', ['js']);
-    gulp.watch('app/assets/scss/**/*.scss', ['css']);
-    gulp.watch('app/views/**/*.jade', ['jade']);
-    gulp.watch('app/index.jade', ['copyindex'])
+gulp.task('watch', function () {
+  gulp.watch('app/**/*.js', ['js', 'refresh']);
+  gulp.watch('app/assets/scss/**/*.scss', ['css', 'refresh']);
+  gulp.watch('app/**/*.jade', ['jade', 'refresh']);
 });

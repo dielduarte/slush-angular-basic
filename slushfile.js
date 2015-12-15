@@ -36,6 +36,9 @@ gulp.task('default', function(done) {
     }, {
         name: 'appEmail',
         message: 'Author e-mail?'
+    },{
+        name: 'appHomepage',
+        message: 'what the git repository?'
     }];
 
     //Ask
@@ -46,6 +49,11 @@ gulp.task('default', function(done) {
             }
             answers.appNameSlug = _.slugify(answers.appName)
             answers.appAuthorSlug = _.slugify(answers.appAuthor)
+            answers.appDescription = _.slugify(answers.appDescription)
+            answers.appVersion = _.slugify(answers.appVersion)
+            answers.appEmail = _.slugify(answers.appEmail)
+            answers.appHomepage = _.slugify(answers.appHomepage)
+
             gulp.src(__dirname + '/templates/**')
                 .pipe(template(answers))
                 .pipe(rename(function(file) {
