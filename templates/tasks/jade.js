@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var minifyHTML = require('gulp-minify-html');
+var minifyHTML = require('gulp-htmlmin');
 var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
 
