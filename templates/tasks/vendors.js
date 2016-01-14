@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var gulpif = require('gulp-if');
 var expect = require('gulp-expect-file');
-var minifyCSS = require('gulp-minify-css');
+var minifyCSS = require('gulp-cssnano');
 
 var files = [
   'bower_components/angular/angular.min.js',
