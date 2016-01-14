@@ -29,7 +29,7 @@ gulp.task('default', function(done) {
     }, {
         name: 'appVersion',
         message: 'What the version?',
-        default: '0.1.0'
+        default: '1.0.0'
     }, {
         name: 'appAuthor',
         message: 'Name of author?'
