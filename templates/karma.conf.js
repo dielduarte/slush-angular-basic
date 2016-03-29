@@ -1,13 +1,13 @@
 module.exports = function(config) {
-	
+
   var wiredep = require('wiredep');
   var bowerFiles = wiredep({devDependencies: true}).js;
 
   config.set({
 
 		basePath: './',
-			
-		frameworks: ['jasmine'],
+
+		frameworks: ['jasmine', 'angular-filesort'],
 
 	  angularFilesort: {
 		  whitelist: [
@@ -16,7 +16,7 @@ module.exports = function(config) {
 	  },
 
 		files: bowerFiles.concat([
-			'app/common/config/env.js',	
+			'app/common/config/env.js',
 			'app/app.js',
 			'app/common/config/app.routes.js',
 			'test/**/*.js'
