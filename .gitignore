@@ -1,2 +1,4 @@
 npm-debug.log
 templates/.DS_Store
+.idea
+node_modules
