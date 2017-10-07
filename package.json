@@ -1,5 +1,5 @@
 { "name": "slush-angular-basic",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "my personal template for develop angular webapp",
   "main": "slushfile.js",
   "keywords": [
