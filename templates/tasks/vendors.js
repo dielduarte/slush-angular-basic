@@ -6,17 +6,17 @@ var expect = require('gulp-expect-file');
 var minifyCSS = require('gulp-cssnano');
 
 var files = [
-  'bower_components/angular/angular.min.js',
-  'bower_components/angular/angular.min.js.map',
-  'bower_components/angular-route/angular-route.min.js',
-  'bower_components/angular-route/angular-route.min.js.map',
-  'bower_components/angular-sanitize/angular-sanitize.min.js',
-  'bower_components/angular-sanitize/angular-sanitize.min.js.map',
-  'bower_components/angular-toastr/dist/angular-toastr.tpls.min.js'
+  'node_modules/angular/angular.min.js',
+  'node_modules/angular/angular.min.js.map',
+  'node_modules/angular-route/angular-route.min.js',
+  'node_modules/angular-route/angular-route.min.js.map',
+  'node_modules/angular-sanitize/angular-sanitize.min.js',
+  'node_modules/angular-sanitize/angular-sanitize.min.js.map',
+  'node_modules/angular-toastr/dist/angular-toastr.tpls.min.js'
 ];
 
 var styles = [
-  'bower_components/angular-toastr/dist/angular-toastr.min.css'
+  'node_modules/angular-toastr/dist/angular-toastr.min.css'
 ];
 
 var EXTERNAL_FONTS = [
